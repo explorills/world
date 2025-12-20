@@ -6,8 +6,14 @@
     @apply border-border;
   }
   
+  html {
+    /* Foundational responsive typography - fluid from 320px to 1280px */
+    font-size: clamp(14px, 0.875rem + 0.25vw, 16px);
+  }
+  
   body {
     font-family: 'Space Grotesk', sans-serif;
+    min-width: 320px;
   }
 
   /* Universal cursor pointer for all interactive elements */
@@ -32,6 +38,40 @@
 }
 
 :root {
+  /* ========================================
+   * FOUNDATIONAL RESPONSIVE SPACING SYSTEM
+   * Minimum viewport: 320px
+   * These values scale fluidly with viewport
+   * ======================================== */
+  
+  /* Modal/Dialog spacing - consistent on all sides */
+  --modal-inset: clamp(0.5rem, 2vw, 1rem);
+  --modal-padding: clamp(1rem, 4vw, 1.5rem);
+  --modal-gap: clamp(0.75rem, 2vw, 1rem);
+  --modal-max-width: min(calc(100vw - var(--modal-inset) * 2), 32rem);
+  --modal-max-width-lg: min(calc(100vw - var(--modal-inset) * 2), 42rem);
+  --modal-max-height: calc(100vh - var(--modal-inset) * 2);
+  --modal-max-height-safe: calc(100dvh - var(--modal-inset) * 2);
+  
+  /* Button sizing - fluid responsive */
+  --btn-padding-x: clamp(1.5rem, 5vw, 3rem);
+  --btn-padding-y: clamp(0.875rem, 2.5vw, 1.75rem);
+  --btn-font-size: clamp(0.875rem, 3vw, 1.25rem);
+  
+  /* Corner elements spacing */
+  --corner-inset: clamp(0.75rem, 2vw, 1.5rem);
+  --corner-padding-x: clamp(0.75rem, 3vw, 1.5rem);
+  --corner-padding-y: clamp(0.5rem, 1.5vw, 0.75rem);
+  
+  /* Typography fluid scaling */
+  --text-xs: clamp(0.625rem, 2vw, 0.75rem);
+  --text-sm: clamp(0.75rem, 2.5vw, 0.875rem);
+  --text-base: clamp(0.875rem, 3vw, 1rem);
+  --text-lg: clamp(1rem, 3.5vw, 1.125rem);
+  --text-xl: clamp(1.125rem, 4vw, 1.25rem);
+  --text-2xl: clamp(1.25rem, 5vw, 1.5rem);
+  
+  /* Theme colors */
   --background: oklch(0.1 0 0);
   --foreground: oklch(0.98 0 0);
   --card: oklch(0.15 0 0);

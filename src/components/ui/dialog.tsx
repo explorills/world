@@ -55,14 +55,39 @@ function DialogContent({
       <DialogPrimitive.Content
         data-slot="dialog-content"
         className={cn(
-          "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-[calc(100%-2rem)] max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 max-h-[calc(100vh-2rem)] overflow-y-auto",
+          // Base positioning and sizing using CSS variables for consistency
+          "fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%]",
+          // Responsive width: uses CSS variable, respects min 320px viewport
+          "w-[calc(100vw-var(--modal-inset)*2)] max-w-[var(--modal-max-width)]",
+          // Responsive height with safe area support
+          "max-h-[var(--modal-max-height-safe,var(--modal-max-height))]",
+          // Responsive padding using CSS variable
+          "p-[var(--modal-padding)]",
+          // Layout
+          "grid gap-[var(--modal-gap)] overflow-y-auto overscroll-contain",
+          // Appearance
+          "bg-background rounded-lg border shadow-lg",
+          // Animations
+          "data-[state=open]:animate-in data-[state=closed]:animate-out",
+          "data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
+          "data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95",
+          "duration-200",
           className
         )}
         {...props}
       >
         {children}
-        <DialogPrimitive.Close className="ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none cursor-pointer [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4">
-          <XIcon />
+        <DialogPrimitive.Close 
+          className={cn(
+            "absolute top-[var(--modal-padding)] right-[var(--modal-padding)]",
+            "rounded-sm opacity-70 transition-opacity",
+            "hover:opacity-100 focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:outline-hidden",
+            "disabled:pointer-events-none cursor-pointer",
+            "ring-offset-background data-[state=open]:bg-accent data-[state=open]:text-muted-foreground",
+            "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-5"
+          )}
+        >
+          <XIcon weight="bold" />
           <span className="sr-only">Close</span>
         </DialogPrimitive.Close>
       </DialogPrimitive.Content>
@@ -74,7 +99,7 @@ function DialogHeader({ className, ...props }: ComponentProps<"div">) {
   return (
     <div
       data-slot="dialog-header"
-      className={cn("flex flex-col gap-2 text-center sm:text-left", className)}
+      className={cn("flex flex-col gap-2 text-left pr-8", className)}
       {...props}
     />
   )
@@ -100,7 +125,7 @@ function DialogTitle({
   return (
     <DialogPrimitive.Title
       data-slot="dialog-title"
-      className={cn("text-lg leading-none font-semibold", className)}
+      className={cn("text-[length:var(--text-lg)] sm:text-[length:var(--text-xl)] leading-tight font-semibold", className)}
       {...props}
     />
   )
@@ -113,7 +138,7 @@ function DialogDescription({
   return (
     <DialogPrimitive.Description
       data-slot="dialog-description"
-      className={cn("text-muted-foreground text-sm", className)}
+      className={cn("text-muted-foreground text-[length:var(--text-sm)]", className)}
       {...props}
     />
   )

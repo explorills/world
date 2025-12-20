@@ -10,10 +10,10 @@ interface CornerButtonProps {
 
 export function CornerButton({ position, children, onClick, disabled }: CornerButtonProps) {
   const positionClasses = {
-    'top-left': 'top-6 left-6 sm:top-6 sm:left-6',
-    'top-right': 'top-6 right-6 sm:top-6 sm:right-6',
-    'bottom-left': 'bottom-6 left-6 sm:bottom-6 sm:left-6',
-    'bottom-right': 'bottom-6 right-6 sm:bottom-6 sm:right-6',
+    'top-left': 'top-[var(--corner-inset)] left-[var(--corner-inset)]',
+    'top-right': 'top-[var(--corner-inset)] right-[var(--corner-inset)]',
+    'bottom-left': 'bottom-[var(--corner-inset)] left-[var(--corner-inset)]',
+    'bottom-right': 'bottom-[var(--corner-inset)] right-[var(--corner-inset)]',
   }
 
   return (
@@ -24,11 +24,11 @@ export function CornerButton({ position, children, onClick, disabled }: CornerBu
       disabled={disabled}
       className={`
         fixed ${positionClasses[position]} z-40
-        px-4 py-3 sm:px-6 sm:py-3
+        px-[var(--corner-padding-x)] py-[var(--corner-padding-y)]
         bg-black/70 backdrop-blur-md
         border border-primary/30
         rounded-lg
-        text-foreground text-sm sm:text-base font-medium tracking-wide
+        text-foreground text-[length:var(--text-sm)] font-medium tracking-wide
         transition-all duration-200
         cursor-pointer
         hover:bg-black/80 hover:border-primary/60

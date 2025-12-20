@@ -19,6 +19,7 @@ const defaultTheme = {
   },
   extend: {
     screens: {
+      xs: "400px",
       coarse: { raw: "(pointer: coarse)" },
       fine: { raw: "(pointer: fine)" },
       pwa: { raw: "(display-mode: standalone)" },

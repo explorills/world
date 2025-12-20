@@ -14,7 +14,7 @@ export function ConnectButton({ onClick }: ConnectButtonProps) {
     >
       <Button
         onClick={onClick}
-        className="relative px-12 py-7 text-xl font-bold tracking-wider uppercase bg-primary text-primary-foreground rounded-lg overflow-hidden group"
+        className="relative px-[var(--btn-padding-x)] py-[var(--btn-padding-y)] text-[length:var(--btn-font-size)] font-bold tracking-wider uppercase bg-primary text-primary-foreground rounded-lg overflow-hidden group"
         style={{
           transformStyle: 'preserve-3d',
           boxShadow: `
