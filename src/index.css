@@ -1,6 +1,11 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
 
+/* Custom media query variants - not width-based, so defined here instead of screens */
+@custom-variant coarse (@media (pointer: coarse));
+@custom-variant fine (@media (pointer: fine));
+@custom-variant pwa (@media (display-mode: standalone));
+
 @layer base {
   * {
     @apply border-border;
