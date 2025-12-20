@@ -1,0 +1,6 @@
+# Bun configuration for ONE world
+# https://bun.sh/docs/runtime/bunfig
+
+[install]
+# Use isolated installs for better security
+frozen-lockfile = false

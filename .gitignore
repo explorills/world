@@ -1,4 +1,46 @@
-# Unity generated folders
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+dist-ssr
+*-dist
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Bun
+bun.lockb
+
+# Misc
+**/agent-eval-report*
+pids
+.file-manifest
+
+# Unity generated folders (in unity/ subdirectory)
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -8,11 +50,6 @@
 [Mm]emoryCaptures/
 UserSettings/
 
-# IDEs
-.vs/
-.idea/
-.vscode/
-
-# OS files
-.DS_Store
-Thumbs.db
+# Nested repositories / helper files
+game-lobby-landing-p/
+components-materials/
