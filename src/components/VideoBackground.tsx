@@ -9,7 +9,15 @@ export function VideoBackground({ videoSrc = '' }: VideoBackgroundProps) {
 
   useEffect(() => {
     if (videoRef.current && videoSrc) {
-      videoRef.current.play().catch(() => {})
+      // Optimize playback for smoother performance on low-end devices
+      const video = videoRef.current
+      
+      // Request lower power mode for background video
+      if ('preservesPitch' in video) {
+        video.preservesPitch = false
+      }
+      
+      video.play().catch(() => {})
     }
   }, [videoSrc])
 
@@ -27,7 +35,16 @@ export function VideoBackground({ videoSrc = '' }: VideoBackgroundProps) {
         loop
         muted
         playsInline
-        className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
+        preload="auto"
+        disablePictureInPicture
+        disableRemotePlayback
+        className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover"
+        style={{
+          transform: 'translate(-50%, -50%) translateZ(0)',
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          contain: 'strict',
+        }}
       >
         <source src={videoSrc} type="video/mp4" />
       </video>
