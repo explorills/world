@@ -9,7 +9,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from '@/components/ui/dialog'
-import { FolderOpen, Book } from '@phosphor-icons/react'
+import { FolderOpen, Book, ChatCircleDots } from '@phosphor-icons/react'
 import { toast } from 'sonner'
 import logoImage from '@/assets/images/logo.png'
 import backgroundVideo from '@/assets/video/background.mp4'
@@ -19,7 +19,7 @@ function App() {
   const [mechanicsOpen, setMechanicsOpen] = useState(false)
 
   const handleConnect = () => {
-    toast.info('Connection functionality coming soon!')
+    toast.info('coming soon!')
   }
 
   return (
@@ -37,8 +37,11 @@ function App() {
         <span className="text-muted-foreground">No Address Connected</span>
       </CornerButton>
 
-      <CornerButton position="bottom-left" disabled>
-        <div className="w-5 h-5 opacity-30" />
+      <CornerButton position="bottom-left" onClick={() => toast.info('coming soon!')}>
+        <div className="flex items-center gap-2">
+          <ChatCircleDots className="w-5 h-5" weight="duotone" />
+          <span className="hidden sm:inline">Chat</span>
+        </div>
       </CornerButton>
 
       <CornerButton position="bottom-right" onClick={() => setMechanicsOpen(true)}>
@@ -250,9 +253,9 @@ function App() {
               </ul>
             </div>
             <div className="p-4 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg border border-primary/30">
-              <h3 className="font-semibold text-primary mb-2 text-base">Launch Timeline</h3>
+              <h3 className="font-semibold text-primary mb-2 text-base">Launch Timeline 2026</h3>
               <p className="text-sm text-foreground/90 leading-relaxed">
-                <strong>Alpha Access:</strong> Q2 2024 | <strong>Open Beta:</strong> Q3 2024 | <strong>Full Launch:</strong> Q4 2024
+                <strong>Alpha Access:</strong> Q2 | <strong>Open Beta:</strong> Q3 | <strong>Full Launch:</strong> Q4
               </p>
             </div>
           </div>
