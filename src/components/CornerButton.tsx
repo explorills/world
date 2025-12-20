@@ -30,6 +30,7 @@ export function CornerButton({ position, children, onClick, disabled }: CornerBu
         rounded-lg
         text-foreground text-sm sm:text-base font-medium tracking-wide
         transition-all duration-200
+        cursor-pointer
         hover:bg-black/80 hover:border-primary/60
         disabled:opacity-50 disabled:cursor-not-allowed
         shadow-lg shadow-primary/10

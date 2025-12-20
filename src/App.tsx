@@ -71,14 +71,14 @@ function App() {
       </div>
 
       <Dialog open={resourcesOpen} onOpenChange={setResourcesOpen}>
-        <DialogContent className="bg-black/95 border-primary/50 backdrop-blur-xl max-w-2xl">
+        <DialogContent className="bg-black/95 border-primary/50 backdrop-blur-xl max-w-2xl w-[calc(100%-2rem)]">
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold text-primary flex items-center gap-3">
               <FolderOpen className="w-7 h-7" weight="duotone" />
               Resources
             </DialogTitle>
             <DialogDescription className="text-foreground/80 text-base leading-relaxed pt-4">
-              Access the ONE ecosystem resources, documentation, and community channels.
+              Access the ONE ecosystem resources, and community channels.
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-6 pt-4">

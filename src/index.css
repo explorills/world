@@ -9,6 +9,26 @@
   body {
     font-family: 'Space Grotesk', sans-serif;
   }
+
+  /* Universal cursor pointer for all interactive elements */
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  select,
+  a[href],
+  label[for],
+  [tabindex]:not([tabindex="-1"]) {
+    cursor: pointer;
+  }
+
+  /* Disabled elements get not-allowed cursor */
+  button:disabled,
+  [role="button"]:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
 }
 
 :root {
