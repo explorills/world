@@ -6,9 +6,10 @@ interface CornerButtonProps {
   children: ReactNode
   onClick?: () => void
   disabled?: boolean
+  className?: string
 }
 
-export function CornerButton({ position, children, onClick, disabled }: CornerButtonProps) {
+export function CornerButton({ position, children, onClick, disabled, className = '' }: CornerButtonProps) {
   const positionClasses = {
     'top-left': 'top-[var(--corner-inset)] left-[var(--corner-inset)]',
     'top-right': 'top-[var(--corner-inset)] right-[var(--corner-inset)]',
@@ -34,6 +35,7 @@ export function CornerButton({ position, children, onClick, disabled }: CornerBu
         hover:bg-black/80 hover:border-primary/60
         disabled:opacity-50 disabled:cursor-not-allowed
         shadow-lg shadow-primary/10
+        ${className}
       `}
     >
       {children}

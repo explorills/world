@@ -27,12 +27,17 @@ function App() {
     <div className="fixed inset-0 overflow-hidden bg-black">
       <VideoBackground videoSrc={backgroundVideo} />
 
-      {/* Top center - Powered by EXPL Nodes tag */}
+      {/* Top center - Powered by EXPL Nodes tag (hidden below 820px) */}
       <div 
-        className="fixed top-[var(--corner-inset)] left-1/2 z-10"
+        className="fixed top-[var(--corner-inset)] left-1/2 z-10 hidden min-[820px]:block"
         style={{ transform: 'translateX(-50%)' }}
       >
         <PoweredByExplNodes size="lg" />
+      </div>
+
+      {/* Top right - Powered by EXPL Nodes tag (shown only below 820px) */}
+      <div className="fixed top-[var(--corner-inset)] right-[var(--corner-inset)] z-10 block min-[820px]:hidden">
+        <PoweredByExplNodes size="md" />
       </div>
 
       <CornerButton position="top-left" onClick={() => setResourcesOpen(true)}>
@@ -42,7 +47,8 @@ function App() {
         </div>
       </CornerButton>
 
-      <CornerButton position="top-right" disabled>
+      {/* No Address Connected - hidden below 820px */}
+      <CornerButton position="top-right" disabled className="hidden min-[820px]:block">
         <span className="text-muted-foreground">No Address Connected</span>
       </CornerButton>
 
