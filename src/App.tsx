@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { VideoBackground } from '@/components/VideoBackground'
 import { ConnectButton } from '@/components/ConnectButton'
 import { CornerButton } from '@/components/CornerButton'
+import { PoweredByExplNodes } from '@/components/PoweredByExplNodes'
 import {
   Dialog,
   DialogContent,
@@ -25,6 +26,14 @@ function App() {
   return (
     <div className="fixed inset-0 overflow-hidden bg-black">
       <VideoBackground videoSrc={backgroundVideo} />
+
+      {/* Top center - Powered by EXPL Nodes tag */}
+      <div 
+        className="fixed top-[var(--corner-inset)] left-1/2 z-10"
+        style={{ transform: 'translateX(-50%)' }}
+      >
+        <PoweredByExplNodes size="lg" />
+      </div>
 
       <CornerButton position="top-left" onClick={() => setResourcesOpen(true)}>
         <div className="flex items-center gap-2">

@@ -1,7 +1,7 @@
 {
   "name": "ONE world - ONE Ecosystem",
   "short_name": "ONE world",
-  "description": "Metaverse game lobby and multiplayer interface for the ONE ecosystem",
+  "description": "Metaverse Lobby and multiplayer interface for the ONE ecosystem",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
