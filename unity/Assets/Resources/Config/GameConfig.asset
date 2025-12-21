@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00000000000000000000000000000000, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  gameTitle: ONE World
+  version: 0.1.0-alpha
+  buildId: dev
+  lobbyServerUrl: wss://lobby.expl.one
+  fallbackServerUrl: wss://lobby-backup.expl.one
+  connectionTimeout: 30
+  maxReconnectAttempts: 5
+  maxPlayersPerLobby: 100
+  playerMoveSpeed: 5
+  playerRotateSpeed: 180
+  masterVolume: 1
+  musicVolume: 0.7
+  sfxVolume: 1
+  targetFrameRate: 60
+  vSyncEnabled: 1
+  debugMode: 1
+  showFpsCounter: 0
+  enableDevConsole: 1

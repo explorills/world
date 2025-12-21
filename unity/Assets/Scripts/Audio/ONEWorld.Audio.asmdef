@@ -1,0 +1,16 @@
+{
+    "name": "ONEWorld.Audio",
+    "rootNamespace": "ONEWorld.Audio",
+    "references": [
+        "ONEWorld.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

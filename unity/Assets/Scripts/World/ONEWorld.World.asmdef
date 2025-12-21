@@ -1,0 +1,16 @@
+{
+    "name": "ONEWorld.World",
+    "rootNamespace": "ONEWorld.World",
+    "references": [
+        "ONEWorld.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

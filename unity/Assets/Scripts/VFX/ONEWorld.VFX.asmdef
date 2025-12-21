@@ -1,0 +1,16 @@
+{
+    "name": "ONEWorld.VFX",
+    "rootNamespace": "ONEWorld.VFX",
+    "references": [
+        "ONEWorld.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
