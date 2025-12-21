@@ -1,6 +1,6 @@
-# ONE world
+# [ONE world](https://world.expl.one)
 
-**[ONE ecosystem](https://expl.one) // powered by [EXPL Nodes](https://node.expl.one)**
+**// powered by [EXPL Nodes](https://node.expl.one)**
 
 Game lobby and multiplayer interface for the ONE ecosystem metaverse platform.
 
@@ -114,4 +114,4 @@ MIT
 
 ---
 
-**ONE ecosystem** // powered by [EXPL Nodes](https://node.expl.one)
+**[ONE world](https://world.expl.one)** // powered by [EXPL Nodes](https://node.expl.one)
