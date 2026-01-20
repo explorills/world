@@ -1,0 +1,352 @@
+# ONE World - Full Documentation
+
+> Metaverse Lobby. Part of the ONE ecosystem.
+
+## Table of Contents
+
+1. Overview
+2. Core Philosophy
+3. EXPL Nodes
+4. Features & Functionality
+5. Revenue Model
+6. Ecosystem Products
+7. Technical Architecture
+8. Frequently Asked Questions
+9. Links & Community
+10. Contact
+
+---
+
+## 1. Overview
+
+ONE World is the immersive metaverse hub connecting digital identity, virtual experiences, and blockchain economies. This game lobby interface serves as the gateway for players entering the ONE World multiplayer environment, providing seamless user authentication, real-time multiplayer chat, in-game marketplace access, and comprehensive game session management.
+
+ONE World bridges Web3 and gaming, creating a persistent virtual universe where players can explore, socialize, trade, and participate in blockchain-powered experiences—all while maintaining true ownership of digital assets through EXPL Node integration.
+
+---
+
+## 2. Core Philosophy
+
+### Open Source
+Every line of code is publicly available on GitHub. We believe in transparency, community contribution, and collaborative development. Both the web lobby interface and game client assets are open for community review and contribution.
+
+### Community-Driven
+Built by people who love what they create. Every feature, every environment, every gameplay mechanic comes from listening to our community. We're not building for players; we're building WITH players.
+
+### Fair Revenue Model
+Unlike traditional gaming platforms where publishers take the majority:
+- **45% to EXPL Node Owners**: Distributed proportionally to all Node holders
+- **45% to ONE Creators**: Rewarding game developers, artists, and contributors
+- **10% to Founders**: Team operational and development costs
+
+Players and creators always benefit first.
+
+---
+
+## 3. EXPL Nodes
+
+### What are EXPL Nodes?
+
+EXPL Nodes are the foundational ownership units of the entire ONE ecosystem. Owning a Node is like owning shares in a gaming company, but better—you earn daily tokens AND receive revenue share from ALL ecosystem products including ONE World marketplace transactions.
+
+### Node Benefits
+
+Each EXPL Node provides:
+- **Shareholder Status**: Across ALL ecosystem projects (World, Pump, Network, etc.)
+- **Daily Token Emissions**: 171 EXPL tokens per day for 731 days = 125,000 EXPL total
+- **Revenue Share**: 45% of ALL ecosystem revenue including in-game purchases
+- **Governance Rights**: Vote on metaverse development and feature priorities
+- **Exclusive Access**: Early access to new worlds, items, and experiences
+
+### Supply & Distribution
+
+- **Total Supply**: 1 million Nodes
+- **Batch 1**: 12,000 Nodes (already distributed)
+- **Batch 2**: 88,000 Nodes
+- **Batch 3**: 900,000 Nodes
+
+As the metaverse expands, Node ownership provides increasing value from ecosystem growth.
+
+---
+
+## 4. Features & Functionality
+
+### Current Features
+
+#### Immersive Lobby Interface
+- **Full-Screen Experience**: Cinematic video background with responsive design
+- **Brand Identity**: Centered logo and visual identity showcase
+- **Dark Theme**: Hot pink (#ec4899) accent color on dark UI
+- **Modal System**: Resources, documentation, and game information panels
+- **Responsive Design**: Optimized for desktop, tablet, and mobile
+
+#### User Connection
+- **Connect Button**: Streamlined authentication entry point
+- **Future Integration**: ONE ID wallet connection (in development)
+- **Session Management**: Persistent player state across sessions
+
+### Planned Features
+
+#### Multiplayer Integration
+- **ONE Chat**: Real-time messaging with other players in the lobby
+- **Voice Chat**: Proximity-based voice communication
+- **Friend System**: Add friends, invite to games, track online status
+- **Guild System**: Create and join guilds for coordinated gameplay
+
+#### Wallet & Economy
+- **ONE ID Authentication**: Decentralized identity and wallet connection
+- **EXPL Token Integration**: Native currency for in-game transactions
+- **NFT Inventory**: View and manage owned game assets
+- **Marketplace Access**: Buy, sell, and trade items directly from lobby
+
+#### Game Session Management
+- **Server Browser**: Find and join multiplayer game sessions
+- **Private Lobbies**: Create invite-only games with friends
+- **Matchmaking**: Automated skill-based player matching
+- **Game History**: Track stats, achievements, and past sessions
+
+#### Cross-Platform Support
+- **Web Lobby**: Browser-based interface (current)
+- **Unity Game Client**: 3D immersive experience (Unity 6000.3.x LTS)
+- **Mobile Companion**: iOS/Android lobby app (planned)
+- **VR Support**: Virtual reality integration (future)
+
+---
+
+## 5. Revenue Model
+
+### How Revenue is Generated
+
+- In-game marketplace commissions (item sales, trades)
+- Premium cosmetics and customization
+- Guild and clan features
+- Event passes and seasonal content
+- Land and space rental in metaverse
+
+### How Revenue is Distributed
+
+Every dollar of revenue follows this split:
+- **45% → EXPL Node Owners**: Distributed proportionally based on Node holdings
+- **45% → ONE Creators**: Game developers, artists, content creators
+- **10% → Founders**: Operational costs, development, infrastructure
+
+This model ensures:
+- Players benefit from ecosystem growth
+- Creators earn fair compensation
+- Sustainable long-term development
+- True community ownership
+
+---
+
+## 6. Ecosystem Products
+
+### Active Products
+
+| Product | Domain | Description |
+|---------|--------|-------------|
+| **ONE World** | world.expl.one | Metaverse game lobby (this product) |
+| **ONE Pump** | pump.expl.one | Crypto sentiment tracking platform |
+| **ONE Network** | network.expl.one | Decentralized node management |
+| **EXPL Nodes** | node.expl.one | Node purchase and management |
+| **ONE Docs** | docs.expl.one | Complete ecosystem documentation |
+
+### Coming Soon
+
+| Product | Domain | Description |
+|---------|--------|-------------|
+| **ONE Agent** | agent.expl.one | AI-powered NPCs and companions |
+| **ONE Chat** | chat.expl.one | Encrypted messaging (in-game + standalone) |
+| **ONE ID** | id.expl.one | Decentralized digital identity |
+| **ONE Venture** | venture.expl.one | Fund metaverse projects |
+| **ONE Care** | care.expl.one | Charitable gaming events |
+| **ONE Merch** | merch.expl.one | Physical + digital merchandise |
+| **ONE Space** | space.expl.one | Extended universe exploration |
+
+### Metaverse Vision
+
+ONE World is building toward:
+- Persistent shared universe
+- User-generated content and worlds
+- Cross-game asset interoperability
+- Blockchain-verified true ownership
+- Creator economy with fair compensation
+- Social experiences beyond traditional gaming
+
+---
+
+## 7. Technical Architecture
+
+### Lobby Interface (Web)
+
+- **Framework**: React 19 with TypeScript
+- **Runtime**: Bun for fast development and builds
+- **Build Tool**: Vite 7 for instant hot module replacement
+- **Styling**: Tailwind CSS 4 with JIT compilation
+- **UI Components**: Radix UI for accessible, composable components
+- **Icons**: Phosphor Icons
+- **Animations**: Framer Motion for smooth transitions
+- **Notifications**: Sonner for user feedback
+
+### Game Client (Unity)
+
+- **Engine**: Unity 6000.3.x LTS (Long Term Support)
+- **Rendering**: Universal Render Pipeline (URP)
+- **Networking**: Unity Netcode for multiplayer (planned)
+- **Platform**: WebGL for browser, standalone for desktop
+- **Performance**: Optimized for mid-range hardware
+
+### Build & Deployment
+
+- **SSG Pre-rendering**: Puppeteer-based static site generation
+  - Full HTML rendering for search engines and AI systems
+  - 80-100 KB rendered content vs 10-15 KB empty shell
+  - Instant content visibility and faster page loads
+- **Deployment**: Vercel with automatic CI/CD
+- **CDN**: Global edge network for low-latency access
+- **Security**: Complete security headers (HSTS, CSP, etc.)
+
+### SEO & AI Visibility
+
+- **Meta Tags**: Complete Open Graph and Twitter Card implementation
+- **Structured Data**: Organization, WebSite, BreadcrumbList schemas
+- **LLMs.txt**: AI-readable documentation standard
+- **AI Crawlers**: 15+ AI systems allowed for discovery
+- **Sitemap**: XML sitemap for search engine indexing
+
+---
+
+## 8. Frequently Asked Questions
+
+### What is ONE World?
+
+ONE World is the metaverse hub for the ONE ecosystem—a game lobby and multiplayer interface connecting players to immersive virtual experiences powered by blockchain technology.
+
+### What platforms are supported?
+
+Currently:
+- **Web Browser**: Lobby interface accessible on any modern browser
+- **Unity Client**: Downloadable game client (in development)
+
+Planned:
+- **Mobile**: iOS and Android companion apps
+- **VR**: Virtual reality support for immersive experiences
+
+### How do I connect to ONE World?
+
+Click the "Connect" button in the lobby. Future versions will integrate ONE ID wallet connection for full blockchain identity and asset ownership.
+
+### What can I do in ONE World?
+
+Current:
+- Access the lobby interface
+- View ecosystem resources and documentation
+- Connect your account
+
+Planned:
+- Join multiplayer game sessions
+- Chat with other players
+- Trade items in the marketplace
+- Participate in events and challenges
+- Create and explore user-generated content
+
+### What are EXPL Nodes?
+
+EXPL Nodes are ownership units in the ONE ecosystem. Each Node:
+- Earns 171 EXPL tokens daily for 731 days
+- Receives 45% of ALL ecosystem revenue (including ONE World marketplace)
+- Grants governance rights over metaverse development
+- Provides exclusive access to premium features
+
+Learn more: https://node.expl.one
+
+### Is ONE World pay-to-win?
+
+No. ONE World is designed for fair gameplay where skill matters most. Node holders and EXPL token users gain cosmetic benefits and convenience features, but never gameplay advantages.
+
+### Can I create content for ONE World?
+
+Yes! We're building a creator economy where players can:
+- Design and sell custom items
+- Build and monetize virtual spaces
+- Create quests and experiences
+- Earn EXPL tokens from their creations
+
+Creator tools are in development. Join our Discord for early access.
+
+### Is ONE World open source?
+
+Yes! Both the lobby interface and many game assets are open source on GitHub: https://github.com/explorills/world
+
+We believe in transparent development and community contribution.
+
+### How does ONE World make money?
+
+Revenue sources:
+- Marketplace transaction fees (buying/selling items)
+- Premium cosmetics and customization
+- Event passes and seasonal content
+- Land and space rental
+
+All revenue follows the 45/45/10 split (Nodes/Creators/Founders).
+
+### What's next for ONE World?
+
+Roadmap includes:
+- Unity game client launch
+- Multiplayer gameplay mechanics
+- ONE Chat integration
+- Marketplace and trading system
+- User-generated content tools
+- Mobile companion apps
+- VR support
+
+---
+
+## 9. Links & Community
+
+### Official Links
+
+- **Main Website**: https://expl.one
+- **ONE World**: https://world.expl.one
+- **Documentation**: https://docs.expl.one
+- **EXPL Nodes**: https://node.expl.one
+
+### Social Media
+
+- **GitHub**: https://github.com/explorills (source code, contributions)
+- **Twitter/X**: https://x.com/explorills_main (announcements, updates)
+- **Discord**: https://discord.com/invite/RetTCVq7tJ (community, support, events)
+
+### Developer Resources
+
+- **Repository**: https://github.com/explorills/world
+- **License**: MIT Open Source
+- **Contributing**: Pull requests welcome
+- **Unity Assets**: Available in repository
+- **Issues**: Report bugs and request features on GitHub
+
+---
+
+## 10. Contact
+
+### Community Support
+
+Join our Discord for:
+- Technical support
+- Game updates and events
+- Community discussions
+- Creator resources
+- Partnership inquiries
+
+**Discord**: https://discord.com/invite/RetTCVq7tJ
+
+### Business Inquiries
+
+For partnerships, press, creator collaborations, or business matters, reach out via Discord and tag @team.
+
+---
+
+**Last Updated**: January 20, 2026
+**Version**: 1.0.0
+**Ecosystem**: ONE Ecosystem // Powered by EXPL Nodes
+**License**: MIT Open Source

@@ -1,0 +1,69 @@
+# ONE World
+
+> Metaverse Lobby. Part of the ONE ecosystem.
+
+## Overview
+
+ONE World is the immersive metaverse hub connecting digital identity, virtual experiences, and blockchain economies. This game lobby serves as the entry point for players accessing the ONE World multiplayer environment, providing user authentication, multiplayer chat, marketplace access, and game session management.
+
+## Core Philosophy
+
+- **Open Source**: Every line of code is public on GitHub
+- **Community-Driven**: Built by people who love what they create
+- **Fair Revenue Model**: 45% to Node owners, 45% to Creators, 10% to founders
+
+## EXPL Nodes
+
+The backbone of the ecosystem. Each EXPL Node:
+- Grants shareholder status across ALL ecosystem projects
+- Earns 171 EXPL tokens daily for 731 days (125,000 EXPL total)
+- Receives share of 45% of ALL revenue distributed to Node owners
+- Total supply: 1 million Nodes across 3 batches (12k, 88k, 900k)
+
+## Key Features
+
+- **Full-Screen Immersive Experience**: Video background with responsive brand identity
+- **User Authentication**: Connect button for seamless player onboarding
+- **Multiplayer Integration**: ONE Chat integration for in-game communication (planned)
+- **Wallet Connection**: ONE ID authentication for blockchain identity (planned)
+- **In-Game Marketplace**: Powered by EXPL ecosystem (planned)
+- **Cross-Platform**: Web lobby interface with Unity 6000.3.x LTS game client
+- **Guild Coordination**: Team and community management features (planned)
+
+## Ecosystem Products
+
+| Product | Domain | Status | Description |
+|---------|--------|--------|-------------|
+| ONE World | world.expl.one | Active | Metaverse game lobby |
+| ONE Pump | pump.expl.one | Active | Crypto sentiment platform |
+| ONE Network | network.expl.one | Active | Blockchain node management |
+| EXPL Nodes | node.expl.one | Active | Node purchase and management |
+| ONE Docs | docs.expl.one | Active | Ecosystem documentation |
+| ONE Agent | agent.expl.one | Coming Soon | AI Agents |
+| ONE Chat | chat.expl.one | Coming Soon | Messaging platform |
+| ONE ID | id.expl.one | Coming Soon | Digital identity |
+| ONE Venture | venture.expl.one | Coming Soon | Investment platform |
+| ONE Care | care.expl.one | Coming Soon | Charity platform |
+| ONE Merch | merch.expl.one | Coming Soon | Merchandise store |
+| ONE Space | space.expl.one | Coming Soon | Extended metaverse |
+
+## Links
+
+- Website: https://world.expl.one
+- Main Ecosystem: https://expl.one
+- GitHub: https://github.com/explorills
+- Twitter/X: https://x.com/explorills_main
+- Discord: https://discord.com/invite/RetTCVq7tJ
+
+## Technical
+
+- Lobby Interface: React 19, TypeScript, Bun, Vite, Tailwind CSS 4
+- UI Components: Radix UI, Phosphor Icons, Framer Motion
+- Game Client: Unity 6000.3.x LTS with Universal Render Pipeline (URP)
+- Deployment: Vercel with SSG pre-rendering
+- Architecture: Static Site Generation (SSG) for SEO/AI visibility
+- License: MIT Open Source
+
+## Contact
+
+For community support, join our Discord: https://discord.com/invite/RetTCVq7tJ
