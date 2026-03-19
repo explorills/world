@@ -123,9 +123,9 @@ function App() {
                       <span className="text-[length:var(--text-xs)] text-accent">→</span>
                     </div>
                   </a>
-                  <a 
-                    href="https://network.expl.one" 
-                    target="_blank" 
+                  <a
+                    href="https://network.expl.one"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="block p-2 sm:p-3 bg-muted/20 rounded-lg border border-accent/20 hover:border-accent/40 transition-colors"
                   >
@@ -134,8 +134,52 @@ function App() {
                       <span className="text-[length:var(--text-xs)] text-accent">→</span>
                     </div>
                   </a>
+                  <a
+                    href="https://id.expl.one"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-2 sm:p-3 bg-muted/20 rounded-lg border border-accent/20 hover:border-accent/40 transition-colors"
+                  >
+                    <div className="text-[length:var(--text-sm)] text-foreground/90 flex items-center justify-between">
+                      ONE ID
+                      <span className="text-[length:var(--text-xs)] text-accent">→</span>
+                    </div>
+                  </a>
+                  <a
+                    href="https://box.expl.one"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-2 sm:p-3 bg-muted/20 rounded-lg border border-accent/20 hover:border-accent/40 transition-colors"
+                  >
+                    <div className="text-[length:var(--text-sm)] text-foreground/90 flex items-center justify-between">
+                      ONE box
+                      <span className="text-[length:var(--text-xs)] text-accent">→</span>
+                    </div>
+                  </a>
+                  <a
+                    href="https://deal.expl.one"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-2 sm:p-3 bg-muted/20 rounded-lg border border-accent/20 hover:border-accent/40 transition-colors"
+                  >
+                    <div className="text-[length:var(--text-sm)] text-foreground/90 flex items-center justify-between">
+                      ONE deal
+                      <span className="text-[length:var(--text-xs)] text-accent">→</span>
+                    </div>
+                  </a>
+                  <a
+                    href="https://chain.expl.one"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-2 sm:p-3 bg-muted/20 rounded-lg border border-accent/20 hover:border-accent/40 transition-colors"
+                  >
+                    <div className="text-[length:var(--text-sm)] text-foreground/90 flex items-center justify-between">
+                      ONE chain
+                      <span className="text-[length:var(--text-xs)] text-accent">→</span>
+                    </div>
+                  </a>
                 </div>
-                <a 
+                <a
                   href="https://node.expl.one/" 
                   target="_blank" 
                   rel="noopener noreferrer"
