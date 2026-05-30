@@ -2,9 +2,13 @@ import { useEffect, useRef } from 'react'
 
 interface VideoBackgroundProps {
   videoSrc?: string
+  /** Lighter VP9/AV1 source, offered first so capable browsers pick it. */
+  webmSrc?: string
+  /** First-frame image painted instantly while the video buffers. */
+  poster?: string
 }
 
-export function VideoBackground({ videoSrc = '' }: VideoBackgroundProps) {
+export function VideoBackground({ videoSrc = '', webmSrc = '', poster }: VideoBackgroundProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
@@ -36,6 +40,7 @@ export function VideoBackground({ videoSrc = '' }: VideoBackgroundProps) {
         muted
         playsInline
         preload="auto"
+        poster={poster}
         disablePictureInPicture
         disableRemotePlayback
         className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto object-cover"
@@ -46,6 +51,7 @@ export function VideoBackground({ videoSrc = '' }: VideoBackgroundProps) {
           contain: 'strict',
         }}
       >
+        {webmSrc && <source src={webmSrc} type="video/webm" />}
         <source src={videoSrc} type="video/mp4" />
       </video>
     </div>

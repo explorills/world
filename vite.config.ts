@@ -14,7 +14,11 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(projectRoot, 'src')
-    }
+    },
+    // Single instance of React + the wallet stack so the package's
+    // internal WagmiProvider / QueryClientProvider context isn't broken
+    // by duplicate copies (mirrors the one-id consumer).
+    dedupe: ['react', 'react-dom', 'wagmi', 'viem', '@tanstack/react-query'],
   },
   server: {
     port: 5000,

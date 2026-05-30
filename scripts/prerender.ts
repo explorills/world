@@ -83,8 +83,16 @@ async function prerender() {
     await page.setViewport({ width: 1920, height: 1080 })
 
     console.log('[prerender] Loading page...')
+    // Use 'domcontentloaded' (not 'networkidle0'): now that the page mounts
+    // the package's OneIdProvider + EcosystemFooter, a long-lived chat
+    // WebSocket / wallet relay keeps the network busy, so 'networkidle0'
+    // would never settle and hit the 60s timeout (failing the build). The
+    // explicit waitForFunction + fixed delay below still guarantee React has
+    // rendered the static content before we snapshot. CSR (createRoot) means
+    // React re-renders over the snapshot on real load, so a partially-settled
+    // capture is purely a SEO nicety, never a correctness issue.
     await page.goto(url, {
-      waitUntil: 'networkidle0',
+      waitUntil: 'domcontentloaded',
       timeout: 60000
     })
 
