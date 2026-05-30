@@ -4,3 +4,8 @@
 [install]
 # Use isolated installs for better security
 frozen-lockfile = false
+
+# Fetch the private @explorills scope (the one-ecosystem-ui package) from
+# GitHub Packages. Auth is read from .npmrc's ${PACKAGES_TOKEN} line.
+[install.scopes]
+"@explorills" = { registry = "https://npm.pkg.github.com" }

@@ -6,15 +6,20 @@ interface CornerButtonProps {
   children: ReactNode
   onClick?: () => void
   disabled?: boolean
+  /** Lift a bottom corner ~64px off the edge so it clears the package
+   *  EcosystemFooter bar — pairs it visually with the package CHAT
+   *  button on the opposite bottom corner. */
+  lifted?: boolean
   className?: string
 }
 
-export function CornerButton({ position, children, onClick, disabled, className = '' }: CornerButtonProps) {
+export function CornerButton({ position, children, onClick, disabled, lifted = false, className = '' }: CornerButtonProps) {
+  const bottomClass = lifted ? 'bottom-16' : 'bottom-[var(--corner-inset)]'
   const positionClasses = {
     'top-left': 'top-[var(--corner-inset)] left-[var(--corner-inset)]',
     'top-right': 'top-[var(--corner-inset)] right-[var(--corner-inset)]',
-    'bottom-left': 'bottom-[var(--corner-inset)] left-[var(--corner-inset)]',
-    'bottom-right': 'bottom-[var(--corner-inset)] right-[var(--corner-inset)]',
+    'bottom-left': `${bottomClass} left-[var(--corner-inset)]`,
+    'bottom-right': `${bottomClass} right-[var(--corner-inset)]`,
   }
 
   return (
@@ -24,7 +29,7 @@ export function CornerButton({ position, children, onClick, disabled, className 
       onClick={onClick}
       disabled={disabled}
       className={`
-        fixed ${positionClasses[position]} z-40
+        fixed ${positionClasses[position]} ${lifted ? 'z-50' : 'z-40'}
         px-[var(--corner-padding-x)] py-[var(--corner-padding-y)]
         bg-black/70 backdrop-blur-md
         border border-primary/30
